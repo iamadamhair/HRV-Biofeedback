@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C3DA7AE1ED608A300C55A25 /* FFTBeatDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3DA7AD1ED608A300C55A25 /* FFTBeatDetection.m */; };
+		9C3DA7BE1ED612B800C55A25 /* HelperFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3DA7BD1ED612B800C55A25 /* HelperFunctions.m */; };
+		9C5FE1251F15BB53003FEFCC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5FE1241F15BB53003FEFCC /* SettingsViewController.swift */; };
+		9CA5A1611F34C15500F32A49 /* EmpaLink-ios-0.7-full.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA5A1601F34C15500F32A49 /* EmpaLink-ios-0.7-full.framework */; };
+		9CBE98A91ED4A9B300B637C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE98A81ED4A9B300B637C7 /* main.m */; };
+		9CBE98AC1ED4A9B300B637C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE98AB1ED4A9B300B637C7 /* AppDelegate.m */; };
+		9CBE98AF1ED4A9B300B637C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE98AE1ED4A9B300B637C7 /* ViewController.m */; };
+		9CBE98B21ED4A9B300B637C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBE98B01ED4A9B300B637C7 /* Main.storyboard */; };
+		9CBE98B51ED4A9B300B637C7 /* HR_Breathing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE98B31ED4A9B300B637C7 /* HR_Breathing.xcdatamodeld */; };
+		9CBE98B71ED4A9B300B637C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CBE98B61ED4A9B300B637C7 /* Assets.xcassets */; };
+		9CBE98BA1ED4A9B300B637C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBE98B81ED4A9B300B637C7 /* LaunchScreen.storyboard */; };
+		9CBE98EA1ED4AD2F00B637C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBE98E91ED4AD2F00B637C7 /* QuartzCore.framework */; };
+		9CBE98EC1ED4AD3400B637C7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBE98EB1ED4AD3400B637C7 /* Accelerate.framework */; };
+		9CBE990E1ED4AFB100B637C7 /* CoreplotFramework in Resources */ = {isa = PBXBuildFile; fileRef = 9CBE990D1ED4AFB100B637C7 /* CoreplotFramework */; };
+		9CBE992F1ED4AFE000B637C7 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBE99281ED4AFDA00B637C7 /* libCorePlot-CocoaTouch.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CBE991F1ED4AFDA00B637C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CBE990F1ED4AFD900B637C7 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = "CorePlot Mac";
+		};
+		9CBE99211ED4AFDA00B637C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CBE990F1ED4AFD900B637C7 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0730F600109492D800E95162;
+			remoteInfo = "UnitTests Mac";
+		};
+		9CBE99231ED4AFDA00B637C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CBE990F1ED4AFD900B637C7 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C38A09781A46185200D45436;
+			remoteInfo = "CorePlot iOS";
+		};
+		9CBE99251ED4AFDA00B637C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CBE990F1ED4AFD900B637C7 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C38A09821A46185300D45436;
+			remoteInfo = "UnitTests iOS";
+		};
+		9CBE99271ED4AFDA00B637C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CBE990F1ED4AFD900B637C7 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C38A09BA1A4619A900D45436;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+		9CBE99291ED4AFDA00B637C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CBE990F1ED4AFD900B637C7 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C38A09C41A4619A900D45436;
+			remoteInfo = "CorePlot-CocoaTouchTests";
+		};
+		9CBE992B1ED4AFDA00B637C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CBE990F1ED4AFD900B637C7 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C37EA6921BC83F2A0091C8F7;
+			remoteInfo = "CorePlot tvOS";
+		};
+		9CBE992D1ED4AFDA00B637C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CBE990F1ED4AFD900B637C7 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C37EA6B71BC83F2D0091C8F7;
+			remoteInfo = "UnitTests tvOS";
+		};
+		9CBE99301ED4AFE400B637C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CBE990F1ED4AFD900B637C7 /* CorePlot.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C38A09B91A4619A900D45436;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C3DA7AD1ED608A300C55A25 /* FFTBeatDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTBeatDetection.m; sourceTree = "<group>"; };
+		9C3DA7BB1ED608AA00C55A25 /* FFTBeatDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFTBeatDetection.h; sourceTree = "<group>"; };
+		9C3DA7BD1ED612B800C55A25 /* HelperFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperFunctions.m; sourceTree = "<group>"; };
+		9C3DA7BF1ED612BE00C55A25 /* HelperFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelperFunctions.h; sourceTree = "<group>"; };
+		9C5FE1231F15BB53003FEFCC /* HR Breathing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HR Breathing-Bridging-Header.h"; sourceTree = "<group>"; };
+		9C5FE1241F15BB53003FEFCC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9CA5A1601F34C15500F32A49 /* EmpaLink-ios-0.7-full.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "EmpaLink-ios-0.7-full.framework"; sourceTree = "<group>"; };
+		9CA5A18B1F34D6F800F32A49 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		9CBE98A41ED4A9B300B637C7 /* HR Breathing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HR Breathing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CBE98A81ED4A9B300B637C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9CBE98AA1ED4A9B300B637C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9CBE98AB1ED4A9B300B637C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9CBE98AD1ED4A9B300B637C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9CBE98AE1ED4A9B300B637C7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9CBE98B11ED4A9B300B637C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CBE98B41ED4A9B300B637C7 /* HR_Breathing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HR_Breathing.xcdatamodel; sourceTree = "<group>"; };
+		9CBE98B61ED4A9B300B637C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CBE98B91ED4A9B300B637C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CBE98BB1ED4A9B300B637C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CBE98E91ED4AD2F00B637C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9CBE98EB1ED4AD3400B637C7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		9CBE990D1ED4AFB100B637C7 /* CoreplotFramework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoreplotFramework; sourceTree = "<group>"; };
+		9CBE990F1ED4AFD900B637C7 /* CorePlot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePlot.xcodeproj; path = CoreplotFramework/CorePlot.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CBE98A11ED4A9B300B637C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CBE992F1ED4AFE000B637C7 /* libCorePlot-CocoaTouch.a in Frameworks */,
+				9CBE98EC1ED4AD3400B637C7 /* Accelerate.framework in Frameworks */,
+				9CA5A1611F34C15500F32A49 /* EmpaLink-ios-0.7-full.framework in Frameworks */,
+				9CBE98EA1ED4AD2F00B637C7 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CBE989B1ED4A9B300B637C7 = {
+			isa = PBXGroup;
+			children = (
+				9CBE98E81ED4AD2F00B637C7 /* Frameworks */,
+				9CBE98A61ED4A9B300B637C7 /* HR Breathing */,
+				9CBE98A51ED4A9B300B637C7 /* Products */,
+				9CBE990F1ED4AFD900B637C7 /* CorePlot.xcodeproj */,
+				9CBE990D1ED4AFB100B637C7 /* CoreplotFramework */,
+			);
+			sourceTree = "<group>";
+		};
+		9CBE98A51ED4A9B300B637C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CBE98A41ED4A9B300B637C7 /* HR Breathing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CBE98A61ED4A9B300B637C7 /* HR Breathing */ = {
+			isa = PBXGroup;
+			children = (
+				9CBE98AA1ED4A9B300B637C7 /* AppDelegate.h */,
+				9CBE98AB1ED4A9B300B637C7 /* AppDelegate.m */,
+				9CBE98AD1ED4A9B300B637C7 /* ViewController.h */,
+				9CBE98AE1ED4A9B300B637C7 /* ViewController.m */,
+				9CBE98B01ED4A9B300B637C7 /* Main.storyboard */,
+				9CBE98B61ED4A9B300B637C7 /* Assets.xcassets */,
+				9CBE98B81ED4A9B300B637C7 /* LaunchScreen.storyboard */,
+				9CBE98BB1ED4A9B300B637C7 /* Info.plist */,
+				9CBE98B31ED4A9B300B637C7 /* HR_Breathing.xcdatamodeld */,
+				9C3DA7AD1ED608A300C55A25 /* FFTBeatDetection.m */,
+				9C3DA7BB1ED608AA00C55A25 /* FFTBeatDetection.h */,
+				9C3DA7BF1ED612BE00C55A25 /* HelperFunctions.h */,
+				9C3DA7BD1ED612B800C55A25 /* HelperFunctions.m */,
+				9CBE98A71ED4A9B300B637C7 /* Supporting Files */,
+				9C5FE1241F15BB53003FEFCC /* SettingsViewController.swift */,
+				9C5FE1231F15BB53003FEFCC /* HR Breathing-Bridging-Header.h */,
+			);
+			path = "HR Breathing";
+			sourceTree = "<group>";
+		};
+		9CBE98A71ED4A9B300B637C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CBE98A81ED4A9B300B637C7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CBE98E81ED4AD2F00B637C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CA5A18B1F34D6F800F32A49 /* CoreBluetooth.framework */,
+				9CA5A1601F34C15500F32A49 /* EmpaLink-ios-0.7-full.framework */,
+				9CBE98EB1ED4AD3400B637C7 /* Accelerate.framework */,
+				9CBE98E91ED4AD2F00B637C7 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CBE99101ED4AFD900B637C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CBE99201ED4AFDA00B637C7 /* CorePlot.framework */,
+				9CBE99221ED4AFDA00B637C7 /* UnitTests.xctest */,
+				9CBE99241ED4AFDA00B637C7 /* CorePlot.framework */,
+				9CBE99261ED4AFDA00B637C7 /* UnitTests iOS.xctest */,
+				9CBE99281ED4AFDA00B637C7 /* libCorePlot-CocoaTouch.a */,
+				9CBE992A1ED4AFDA00B637C7 /* CorePlot-CocoaTouchTests.xctest */,
+				9CBE992C1ED4AFDA00B637C7 /* CorePlot.framework */,
+				9CBE992E1ED4AFDA00B637C7 /* UnitTests tvOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CBE98A31ED4A9B300B637C7 /* HR Breathing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CBE98BE1ED4A9B300B637C7 /* Build configuration list for PBXNativeTarget "HR Breathing" */;
+			buildPhases = (
+				9CBE98A01ED4A9B300B637C7 /* Sources */,
+				9CBE98A11ED4A9B300B637C7 /* Frameworks */,
+				9CBE98A21ED4A9B300B637C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CBE99311ED4AFE400B637C7 /* PBXTargetDependency */,
+			);
+			name = "HR Breathing";
+			productName = "HR Breathing";
+			productReference = 9CBE98A41ED4A9B300B637C7 /* HR Breathing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CBE989C1ED4A9B300B637C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Adam Hair";
+				TargetAttributes = {
+					9CBE98A31ED4A9B300B637C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MTATN3VVMA;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9CBE989F1ED4A9B300B637C7 /* Build configuration list for PBXProject "HR Breathing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CBE989B1ED4A9B300B637C7;
+			productRefGroup = 9CBE98A51ED4A9B300B637C7 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9CBE99101ED4AFD900B637C7 /* Products */;
+					ProjectRef = 9CBE990F1ED4AFD900B637C7 /* CorePlot.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9CBE98A31ED4A9B300B637C7 /* HR Breathing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9CBE99201ED4AFDA00B637C7 /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = 9CBE991F1ED4AFDA00B637C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9CBE99221ED4AFDA00B637C7 /* UnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.xctest;
+			remoteRef = 9CBE99211ED4AFDA00B637C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9CBE99241ED4AFDA00B637C7 /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = 9CBE99231ED4AFDA00B637C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9CBE99261ED4AFDA00B637C7 /* UnitTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "UnitTests iOS.xctest";
+			remoteRef = 9CBE99251ED4AFDA00B637C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9CBE99281ED4AFDA00B637C7 /* libCorePlot-CocoaTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCorePlot-CocoaTouch.a";
+			remoteRef = 9CBE99271ED4AFDA00B637C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9CBE992A1ED4AFDA00B637C7 /* CorePlot-CocoaTouchTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CorePlot-CocoaTouchTests.xctest";
+			remoteRef = 9CBE99291ED4AFDA00B637C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9CBE992C1ED4AFDA00B637C7 /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = 9CBE992B1ED4AFDA00B637C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9CBE992E1ED4AFDA00B637C7 /* UnitTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "UnitTests tvOS.xctest";
+			remoteRef = 9CBE992D1ED4AFDA00B637C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CBE98A21ED4A9B300B637C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CBE98BA1ED4A9B300B637C7 /* LaunchScreen.storyboard in Resources */,
+				9CBE98B71ED4A9B300B637C7 /* Assets.xcassets in Resources */,
+				9CBE98B21ED4A9B300B637C7 /* Main.storyboard in Resources */,
+				9CBE990E1ED4AFB100B637C7 /* CoreplotFramework in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CBE98A01ED4A9B300B637C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CBE98AF1ED4A9B300B637C7 /* ViewController.m in Sources */,
+				9CBE98AC1ED4A9B300B637C7 /* AppDelegate.m in Sources */,
+				9C5FE1251F15BB53003FEFCC /* SettingsViewController.swift in Sources */,
+				9CBE98B51ED4A9B300B637C7 /* HR_Breathing.xcdatamodeld in Sources */,
+				9C3DA7BE1ED612B800C55A25 /* HelperFunctions.m in Sources */,
+				9CBE98A91ED4A9B300B637C7 /* main.m in Sources */,
+				9C3DA7AE1ED608A300C55A25 /* FFTBeatDetection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CBE99311ED4AFE400B637C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CorePlot-CocoaTouch";
+			targetProxy = 9CBE99301ED4AFE400B637C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CBE98B01ED4A9B300B637C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CBE98B11ED4A9B300B637C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CBE98B81ED4A9B300B637C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CBE98B91ED4A9B300B637C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CBE98BC1ED4A9B300B637C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9CBE98BD1ED4A9B300B637C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CBE98BF1ED4A9B300B637C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = MTATN3VVMA;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/CoreplotFramework/**";
+				INFOPLIST_FILE = "HR Breathing/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.tamu.adamhair.HR-Breathing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HR Breathing/HR Breathing-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9CBE98C01ED4A9B300B637C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = MTATN3VVMA;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/CoreplotFramework/**";
+				INFOPLIST_FILE = "HR Breathing/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.tamu.adamhair.HR-Breathing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HR Breathing/HR Breathing-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CBE989F1ED4A9B300B637C7 /* Build configuration list for PBXProject "HR Breathing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CBE98BC1ED4A9B300B637C7 /* Debug */,
+				9CBE98BD1ED4A9B300B637C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CBE98BE1ED4A9B300B637C7 /* Build configuration list for PBXNativeTarget "HR Breathing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CBE98BF1ED4A9B300B637C7 /* Debug */,
+				9CBE98C01ED4A9B300B637C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9CBE98B31ED4A9B300B637C7 /* HR_Breathing.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9CBE98B41ED4A9B300B637C7 /* HR_Breathing.xcdatamodel */,
+			);
+			currentVersion = 9CBE98B41ED4A9B300B637C7 /* HR_Breathing.xcdatamodel */;
+			path = HR_Breathing.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9CBE989C1ED4A9B300B637C7 /* Project object */;
+}
